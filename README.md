@@ -1,4 +1,4 @@
-<h1>PREFINALS_AUTH_LastName_FirstName</h1><br>
+<h1>PREFINALS_AUTH_Penaflor_Jose</h1><br>
 This solution contains two projects, AuthServer and ProtectedApi, for building a secure web API with JWT authentication using Onion Architecture principles in .NET Core.<br><br>
 
 <h3>AuthServer<br></h3>
