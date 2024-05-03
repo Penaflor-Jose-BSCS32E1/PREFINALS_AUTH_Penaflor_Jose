@@ -1,6 +1,7 @@
 ﻿using AuthServer.Core;
 using AuthServer.Model;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -73,5 +74,45 @@ public class AuthController : ControllerBase
         {
             return StatusCode(500, new { message = "Error authenticating user", error = ex.Message });
         }
+
+        [HttpGet("about/me")]
+        IActionResult GetAboutMe()
+        {
+    
+            var randomFacts = new List<string>
+            {
+                 "Gamer",
+                 "Loves coding",
+                "Introvert"
+
+             };
+
+            var random = new Random();
+            var randomIndex = random.Next(0, randomFacts.Count);
+
+            return Ok(new { about = randomFacts[randomIndex] });
+        }
+        [HttpGet("about")]
+        IActionResult GetAbout()
+        {
+            var creatorName = "Jose Peñaflor";
+            return Ok(new { name = creatorName });
+        }
+
+        [HttpPost("about")]
+        IActionResult PostAbout([FromBody] NameModel nameModel)
+        {
+            if (nameModel == null || string.IsNullOrEmpty(nameModel.Name))
+            {
+                return BadRequest("Name is required.");
+            }
+
+            var ownerName = "Jose Peñaflor";
+            var greetingMessage = $"Hi {nameModel.Name} from {ownerName}";
+            return Ok(new { message = greetingMessage });
+        }
+
+
+
     }
 }
