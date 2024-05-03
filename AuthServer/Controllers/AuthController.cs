@@ -1,4 +1,5 @@
 ﻿using AuthServer.Core;
+using AuthServer.Model;
 using Microsoft.AspNetCore.Mvc;
 
 [Route("api/[controller]")]
@@ -15,23 +16,62 @@ public class AuthController : ControllerBase
     }
 
     [HttpPost("register")]
-    public async Task<IActionResult> Register(User user)
+    public async Task<IActionResult> Register(UserRegisterModel registerModel)
     {
-        var registeredUser = await _userService.RegisterUserAsync(user);
-        // Return registered user or appropriate response
+        // Check if the model is valid
+        if (!ModelState.IsValid)
+        {
+            return BadRequest(ModelState);
+        }
+
+        // Map the register model to a User entity
+        var user = new User
+        {
+            Username = registerModel.Username,
+            PasswordHash = registerModel.Password, // Assuming you hash the password before saving
+            Email = registerModel.Email
+        };
+
+        try
+        {
+            // Call the user service to register the user
+            var registeredUser = await _userService.RegisterUserAsync(user);
+            return Ok(new { message = "User registered successfully", user = registeredUser });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Error registering user", error = ex.Message });
+        }
     }
+
 
     [HttpPost("login")]
     public async Task<IActionResult> Login(UserLoginModel loginModel)
     {
-        if (await _authService.ValidateUserAsync(loginModel.Username, loginModel.Password))
+        // Check if the model is valid
+        if (!ModelState.IsValid)
         {
+            return BadRequest(ModelState);
+        }
+
+        try
+        {
+            // Call the authentication service to validate the user credentials
+            var isValidUser = await _authService.ValidateUserAsync(loginModel.Username, loginModel.Password);
+
+            if (!isValidUser)
+            {
+                return Unauthorized(new { message = "Invalid username or password" });
+            }
+
             var user = await _userService.GetUserAsync(loginModel.Username);
             var token = await _authService.GenerateJwtTokenAsync(user);
-            // Return JWT token or appropriate response
-        }
-        // Invalid credentials response
-    }
 
-    // Other authentication endpoints
+            return Ok(new { token });
+        }
+        catch (Exception ex)
+        {
+            return StatusCode(500, new { message = "Error authenticating user", error = ex.Message });
+        }
+    }
 }
