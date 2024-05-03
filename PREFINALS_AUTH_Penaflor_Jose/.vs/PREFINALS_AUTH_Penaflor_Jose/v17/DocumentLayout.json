@@ -3,6 +3,9 @@
   "WorkspaceRootPath": "E:\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AADAC8C9-955C-4E4A-B22C-72F3ED61A703}|..\\AuthServer\\AuthServer.csproj|e:\\prefinals_auth_penaflor_jose\\authserver\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AADAC8C9-955C-4E4A-B22C-72F3ED61A703}|..\\AuthServer\\AuthServer.csproj|e:\\prefinals_auth_penaflor_jose\\authserver\\core\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -24,9 +27,6 @@
       "AbsoluteMoniker": "D:0:0:{AADAC8C9-955C-4E4A-B22C-72F3ED61A703}|..\\AuthServer\\AuthServer.csproj|e:\\prefinals_auth_penaflor_jose\\authserver\\secret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AADAC8C9-955C-4E4A-B22C-72F3ED61A703}|..\\AuthServer\\AuthServer.csproj|e:\\prefinals_auth_penaflor_jose\\authserver\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AADAC8C9-955C-4E4A-B22C-72F3ED61A703}|..\\AuthServer\\AuthServer.csproj|e:\\prefinals_auth_penaflor_jose\\authserver\\authserver.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -37,11 +37,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\AuthServer\\Controllers\\AuthController.cs",
+              "ToolTip": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\AuthServer\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-03T07:06:40.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Core\\IAuthService.cs",
               "RelativeDocumentMoniker": "..\\AuthServer\\Core\\IAuthService.cs",
@@ -49,12 +62,11 @@
               "RelativeToolTip": "..\\AuthServer\\Core\\IAuthService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T06:57:29.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T06:57:29.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IUserService.cs",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Core\\IUserService.cs",
               "RelativeDocumentMoniker": "..\\AuthServer\\Core\\IUserService.cs",
@@ -62,25 +74,24 @@
               "RelativeToolTip": "..\\AuthServer\\Core\\IUserService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T06:55:26.798Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T06:55:26.798Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "User.cs",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Core\\User.cs",
               "RelativeDocumentMoniker": "..\\AuthServer\\Core\\User.cs",
               "ToolTip": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Core\\User.cs",
               "RelativeToolTip": "..\\AuthServer\\Core\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAApAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-03T06:53:48.902Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\appsettings.json",
               "RelativeDocumentMoniker": "..\\AuthServer\\appsettings.json",
@@ -88,12 +99,11 @@
               "RelativeToolTip": "..\\AuthServer\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-03T06:49:20.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-03T06:49:20.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "AuthServer.http",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\AuthServer.http",
               "RelativeDocumentMoniker": "..\\AuthServer\\AuthServer.http",
@@ -105,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Program.cs",
               "RelativeDocumentMoniker": "..\\AuthServer\\Program.cs",
@@ -118,18 +128,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "..\\AuthServer\\WeatherForecast.cs",
-              "ToolTip": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\WeatherForecast.cs",
-              "RelativeToolTip": "..\\AuthServer\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-03T06:49:07.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "Secret.cs",
               "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\AuthServer\\Secret.cs",
               "RelativeDocumentMoniker": "..\\AuthServer\\Secret.cs",
