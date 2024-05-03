@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CFA05DDE-6AB9-4522-A19B-55CBBDF45B1A}|PREFINALS_AUTH_Penaflor_Jose.csproj|e:\\prefinals_auth_penaflor_jose\\prefinals_auth_penaflor_jose\\prefinals_auth_penaflor_jose.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CFA05DDE-6AB9-4522-A19B-55CBBDF45B1A}|PREFINALS_AUTH_Penaflor_Jose.csproj|solutionrelative:prefinals_auth_penaflor_jose.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PREFINALS_AUTH_Penaflor_Jose",
+              "DocumentMoniker": "E:\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose.csproj",
+              "RelativeDocumentMoniker": "PREFINALS_AUTH_Penaflor_Jose.csproj",
+              "ToolTip": "E:\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose\\PREFINALS_AUTH_Penaflor_Jose.csproj",
+              "RelativeToolTip": "PREFINALS_AUTH_Penaflor_Jose.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-03T06:33:51.787Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
