@@ -1,35 +1,71 @@
-<h1>PREFINALS_AUTH_Penaflor_Jose</h1><br>
-This solution contains two projects, AuthServer and ProtectedApi, for building a secure web API with JWT authentication using Onion Architecture principles in .NET Core.<br><br>
+Self-Assessment: Onion Architecture, MVC, and Web API (.NET Core) with Bottlenecks (Encountered)<br><br>
+Conceptual Understanding:<br>
 
-<h3>AuthServer<br></h3>
-The AuthServer project implements the core logic for user authentication, including registration, login, password changes, and locking. It also handles JWT token generation. This project follows the Onion Architecture pattern with separate layers for core business logic, interfaces, and presentation (controllers).<br><br>
+Onion Architecture: (Yes/No) 
+Have you heard of the Onion Architecture principle in software design? **YES**<br><br>
+ 
+ 
+MVC Pattern: (Yes/No) 
+Are you familiar with the Model-View-Controller (MVC) pattern for building web applications?**YES**<br><br>
+ 
+ 
+ 
+Web API: (Yes/No) 
+Do you understand the concept of building RESTful APIs using ASP.NET Core Web API?**YES**<br><br>
+ 
+ 
+ 
 
-<h3>Setup and Configuration<br></h3>
-<ol>
-<li>Dependencies: Install required NuGet packages for JWT authentication and token management.</li>
-<ul><li>Microsoft.AspNetCore.Authentication.JwtBearer</li>
-<li>Microsoft.IdentityModel.Tokens</li>
-<li>System.IdentityModel.Tokens.Jwt</li></ul>
-<li>Configuration: Set up JWT settings in the appsettings.json file, including the JWT signing key, issuer, audience, and token expiry time.</li>
-<li>Onion Architecture: Implement core logic for user management and authentication using interfaces and concrete classes following the Onion Architecture principles.</li>
-<li>Presentation Layer: Create controllers in the Controllers folder to handle authentication endpoints (e.g., register, login).</li></ol><br><br>
+Application & Bottlenecks:<br>
+Onion Architecture:
+ 
+ 
+Benefits: (1-3 keywords)
+ 
+ 
+Briefly list some key benefits of using Onion Architecture in .NET Core projects. (e.g., separation of concerns, testability)<br><br>
 
-<h3>Usage<br></h3>
-<ul>
-<li>Register a new user: POST /api/auth/register</li>
-<li>Login with credentials: POST /api/auth/login</li>
-<li>Other authentication and user management endpoints as needed.
-  </li><br><br>
-</ul>
-<h3>ProtectedApi<br></h3>
-The ProtectedApi project exposes an endpoint that requires a valid JWT token for access. It returns basic user information and fun facts about the API creator.
+Onion Architecture makes software development easier by keeping parts separate, simplifying testing, and allowing for changes without affecting everything. It helps focus on important tasks, promotes code reuse, and makes programs easier to understand and maintain over time.
+ 
+ 
+ 
+ 
+Bottlenecks (Encountered): (Yes/No and Briefly Explain)<br><br>
+Have you encountered any challenges with Onion Architecture in your projects? If so, briefly describe the bottleneck(s). (e.g., Increased complexity for simple projects, difficulty finding developers familiar with the pattern)<br><br>
+Yes, Implementing Onion Architecture can bring challenges such as making simple projects more complex than necessary, finding developers familiar with the pattern, restructuring legacy projects, potential performance impacts, and the risk of over-engineering. These challenges can slow down initial progress and require careful consideration to balance the benefits of the architecture with its complexities.
 
-<h3>Setup<br></h3>
-<ol>
-<li>Dependencies: Install required NuGet packages for ASP.NET Core MVC.</li>
-<ul><li>Microsoft.AspNetCore.Mvc</li></ul>
-<li>Authorization: Configure JWT bearer token authentication in the Startup.cs file to require a valid token for accessing any endpoint.</li>
-<li>Protected Endpoint: Implement a controller with an action decorated with [Authorize] to enforce authorization. This endpoint returns user information and fun facts.</li><br><br></ol>
-  
-<h3>Usage<br></h3>
-<ul><li>Access protected endpoint: GET /api/protected/userinfo</li></ul>
+
+ 
+ 
+
+MVC:<br>
+Components: (1-3 keywords each)
+ 
+Briefly describe the roles of the Model, View, and Controller in the MVC pattern.<br><br>
+Model handles data and rules.
+View shows things to users.
+Controller manages user actions and talks to the Model and View.
+ 
+ 
+ 
+Bottlenecks (Encountered): (Yes/No and Briefly Explain)
+ 
+Have you encountered any challenges with tight coupling between Model and Controller in MVC projects? If so, briefly describe the issue(s). (e.g., Difficulty in unit testing controllers, logic changes rippling through the application)<br><br>
+No but Tightly coupling the Model and Controller in MVC projects can cause problems. It makes testing controllers harder because changes in one part often mean changing others, leading to more bugs and slower development. Also, it can make code less reusable and flexible for future needs. To fix this, it's important to keep Model and Controller separate and use interfaces to connect them, making testing easier and the code more adaptable. 
+ 
+
+Web API:
+ 
+ 
+Differences from MVC: (Yes/No and Briefly Explain)
+ 
+ 
+Can you differentiate between traditional MVC applications and Web APIs? Briefly explain the main difference.<br><br>
+Traditional MVC applications are for users to interact with through interfaces, while Web APIs are for programs to talk to each other over the internet. MVC is about user interfaces, and APIs are about data exchange between software.
+ 
+ 
+Bottlenecks (Encountered): (Yes/No and Briefly Explain)
+ 
+ 
+Have you encountered any performance challenges with traditional MVC applications compared to Web APIs? If so, briefly describe the scenario(s). (e.g., Frequent page refreshes causing performance overhead, complex data exchange requiring a more lightweight approach)<br><br>
+Yes, Traditional MVC applications can face performance issues like slow page loads due to frequent refreshes and complex data exchanges. This happens because MVC often reloads entire pages and handles data in a way that can strain servers. On the other hand, Web APIs are better for handling lots of data exchanges quickly and efficiently, making them a good choice for real-time updates and reducing the strain on servers. To improve performance in MVC, strategies like caching and optimizing data handling can help, but sometimes using Web APIs is a more effective solution.
